@@ -1,0 +1,99 @@
+body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.textForm {
+    display: flex;
+    align-items: end;
+
+    margin: 5px 0 50px 0;
+}
+
+.messagers {
+    display: flex;
+    align-items: end;
+    margin: 10px;
+    min-width: 200px;
+    padding-right: 80px;
+}
+
+.box {
+    position: relative;
+    min-width: 200px;
+    background-color: rgba(22, 5, 71, 0.58);
+    border-radius: 7px 7px 7px 0;
+}
+
+.box:before {
+    content: '';
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(22, 5, 71, 0.58) 0);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+
+}
+
+.box p {
+    margin: 2px;
+}
+
+.name, .message, .time {
+    padding: 0 6px;
+}
+
+.name {
+    color: #917be5;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.message {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.time {
+    display: inline-block;
+    position: inherit;
+    left: 145px;
+    color: rgba(199, 20, 20, 0.25);
+    font-weight: bold;
+}
+
+.messagers img {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+}
+
+.button {
+    height: 20px;
+    width: 60px;
+    background-color: rgba(255, 51, 255, 0.36);
+    border: 1px solid rgba(119, 68, 227, 0.62);
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
