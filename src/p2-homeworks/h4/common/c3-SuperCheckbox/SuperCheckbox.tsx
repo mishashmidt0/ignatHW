@@ -24,7 +24,6 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         if (onChangeChecked) {
             onChangeChecked(e.currentTarget.checked)
         }
-        console.log(e.currentTarget.checked)
     }
 
     const finalInputClassName = `${s.checkbox} ${className ? className : ''}`
@@ -39,7 +38,8 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
                 checked={restProps.checked}
             />
-            {children && <span className={s.spanClassName}>{children}</span>}
+
+            {children && <span className={s.spanClassName} onChange={onChangeCallback}>{children}</span>}
         </label> // благодаря label нажатие на спан передастся в инпут
     )
 }

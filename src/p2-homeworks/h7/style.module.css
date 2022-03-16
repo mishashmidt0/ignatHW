@@ -1,0 +1,9 @@
+.selected,
+.option {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.selected {
+    margin: 10px;
+}
