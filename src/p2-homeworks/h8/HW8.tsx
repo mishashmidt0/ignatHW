@@ -17,21 +17,16 @@ function HW8() {
 
     const [people, setPeople] = useState<stateType>(initialPeople)
 
-    const sortUp = () => {
-        setPeople(homeWorkReducer(people, {type: 'sort', payload: 'up'}))
-
-    }
-    const sortDown = () => {
-        setPeople(homeWorkReducer(people, {type: 'sort', payload: 'down'}))
-
-    }
-    const chek = () => {
-        setPeople(homeWorkReducer(people, {type: 'check', payload: 18}))
-
-    }
+    const sortUp = () => setPeople(homeWorkReducer(people, {type: 'sort', payload: 'up'}))
 
 
-    return <HW8ClearFunction people={people} sortUp={sortUp} sortDown={sortDown} check={chek}/>
+    const sortDown = () => setPeople(homeWorkReducer(people, {type: 'sort', payload: 'down'}))
+
+
+    const chek18 = () => setPeople(homeWorkReducer(people, {type: 'check', payload: 18}))
+
+
+    return <HW8ClearFunction people={people} sortUp={sortUp} sortDown={sortDown} chek={chek18}/>
 }
 
 export default HW8

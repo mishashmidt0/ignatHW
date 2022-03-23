@@ -8,7 +8,7 @@ type hwPropsType = {
     people: stateType
     sortUp: () => void
     sortDown: () => void
-    check: () => void
+    chek: () => void
 }
 
 export function HW8ClearFunction(props: hwPropsType) {
@@ -24,7 +24,7 @@ export function HW8ClearFunction(props: hwPropsType) {
             <div className={s.button}>
                 <div><SuperButton onClick={props.sortUp}>sort up</SuperButton></div>
                 <div><SuperButton onClick={props.sortDown}>sort down</SuperButton></div>
-                <div><SuperButton onClick={props.check}>check 18</SuperButton></div>
+                <div><SuperButton onClick={props.chek}>check 18</SuperButton></div>
             </div>
         </div>
     )
