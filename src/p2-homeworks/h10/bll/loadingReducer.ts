@@ -1,14 +1,35 @@
 const initState = {
-
+    isLoading: false
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+export enum TypeForLoadingReducer {
+    LOAD = 'LOAD',
+    OK = 'OK'
+}
+
+interface LoadingReducerProps {
+    isLoading: boolean
+}
+
+interface actionProps {
+    type: string;
+}
+
+export const loadingReducer = (state: LoadingReducerProps = initState, action: actionProps): LoadingReducerProps => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case TypeForLoadingReducer.LOAD: {
+            return {isLoading: true}
         }
-        default: return state
+        case TypeForLoadingReducer.OK: {
+            return {isLoading: false}
+        }
+        default:
+            return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+export const loadingAC = (type: TypeForLoadingReducer): actionProps => {
+    return {
+        type
+    }
+}
