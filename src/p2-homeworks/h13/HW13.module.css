@@ -1,0 +1,31 @@
+.container {
+    margin: 40px;
+    border: #3FB8AF 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.container button:hover {
+    background-color: #50b8c0;
+    transition: 0.4s;
+}
+
+.container input {
+    margin: 20px;
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+
+}
