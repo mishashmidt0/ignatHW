@@ -11,8 +11,6 @@ export const PATH = {
     PRE_JUNIOR: '/pre-junior',
     PRE_MIDDLE: '/pre-middle',
     PRE_SENIOR: '/pre-senior',
-
-
 }
 
 export function Pages() {

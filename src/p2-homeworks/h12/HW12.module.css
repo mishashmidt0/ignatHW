@@ -1,9 +1,13 @@
+
 .dark {
     background: dimgrey;
 }
 
 .dark-text {
     color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    initial-letter: normal;
 }
 
 .red {
@@ -12,6 +16,9 @@
 
 .red-text {
     color: aqua;
+    font-size: 16px;
+    font-weight: bold;
+    initial-letter: normal;
 }
 
 .some {
@@ -20,4 +27,7 @@
 
 .some-text {
     color: darkslateblue;
+    font-size: 16px;
+    font-weight: bold;
+    initial-letter: normal;
 }
